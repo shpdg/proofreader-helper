@@ -1,0 +1,28 @@
+* {
+  font-family: 'Lora', serif;
+}
+
+#logo {
+  text-decoration: none;
+  color: black;
+}
+
+#static-explanation-text {
+  width: 90%;
+}
+
+footer {
+  font-size: 15px;
+}
+
+.normal-links {
+  color: black;
+}
+
+.normal-links:hover {
+  background-color: #9288b5;
+}
+
+.normal-links:active { /* thanks: https://stackoverflow.com/questions/13630229/can-i-have-an-onclick-effect-in-css */
+  background-color: #514c63;
+}

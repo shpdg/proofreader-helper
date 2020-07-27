@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Proofreader Helper</title>
+    <link rel="stylesheet" href="style.css"> <!-- Local stylesheet -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap" rel="stylesheet"> <!-- Google Fonts - Lora (serif) -->
+    <link rel="shortcut icon" href="favicon.ico"> <!-- thanks: https://stackoverflow.com/questions/11362968/favicon-not-working -->
+  </head>
+  <body>
+    <header>
+      <h1><center><a href="index.html" id="logo">Proofreader → Helper<sup><i>2.0</i></sup></a></center></h1>
+    </header>
+    <center>
+      <section id="input-area">
+        <div id="error-input-area"> <!-- aka the thing that needs to be replaced every time the "Next section" or "Next error" button is pressed -->
+          <label for="section-name-input">Section name:</label>
+          <input type="text" id="section-name-input" name="section-name-input" placeholder="Section 1"></input>
+        </div>
+        <br>
+        <div id="buttons">
+          <button type="button" id="next-error">Next error</button>
+          <button type="button" id="next-section">Next section</button>
+          <button type="button" id="finished">Finished</button>
+        </div>
+      </section>
+      <div id="static-explanation-text">
+        <br><br>
+        <p>
+          <h2>What is this?</h2>
+          This is a tool to aid you in proofreading someone else's work. If you don't have permission
+          to edit someone's file, or you simply want to tell them the errors that need to be fixed
+          rather than fixing them yourself, you can use this tool to inform them of those errors
+          in a nicely-formatted way. Yes, it's simple — but I think it may be faster than having to
+          manually copy and paste whatever formatting you are using to display all the errors you've
+          found.<br><br>
+
+          <h2>How do I use it?</h2>
+          There are two types of "elements" in a Proofreader Helper message — sections and errors.
+          This is reflected by the fact that there is a "Next error" button as well as a "Next section"
+          button. If the piece of writing you are proofreading is very small, you may only need one section.
+          If it contains many different slides, paragraphs, or any other clear sections, you may wish to
+          add a section for each of those. After you've added a new section, you can type the name in
+          the text box. When you've added a new error, type the original text on the left side, and the
+          corrected text on the right side. After you have finished proofreading, click the "Finished" button.
+          Then you can copy and paste the corrections in your preferred format.<br><br>
+
+          <h2>Which formats does it provide?</h2>
+          Plain text, BBCode, Markdown, Wikitext, HTML, and JSON. If you have a suggestion for a format
+          that I missed, please submit an issue on GitHub.<br><br>
+
+          <h2>2.0? Where is 1.0?</h2>
+          I was working on another version of this website before I created this one. It was designed a bit
+          differently. However, there were some glitches that I was not able to fix, and I was not sure how
+          to make it work. Because of that, I rewrote it, and changed several aspects of how it worked.<br><br><br>
+        </p>
+      </div>
+      <footer>
+        <p>
+          <i>Created by <a href="https://github.com/shpdg">shpdg</a>. Font is <a href="https://fonts.google.com/specimen/Lora?query=Lora" class="normal-links">Lora</a> by Cyreal,
+          served by <a href="https://fonts.google.com/" class="normal-links">Google Fonts</a>.
+          <br>Thanks to <a href="https://www.w3schools.com/" class="normal-links">w3schools.com</a> and the
+          <a href="https://developer.mozilla.org/" class="normal-links">Mozilla Developer Network</a> for their extensive HTML, CSS, and JavaScript documentation.
+          <br>The source code for this project is available <a href="https://github.com/shpdg/proofreader-helper" class="normal-links">here</a>.
+          </i>
+        </p>
+      </footer>
+    </center>
+    <script type="text/javascript" src="main.js"></script> <!-- Local main JS file -->
+  </body>
+</html>
