@@ -253,7 +253,7 @@ function outputInit(typeOfOutput) { // creates a read-only output box for a give
   outputBox.setAttribute('id', typeOfOutput);
   outputBox.setAttribute('name', typeOfOutput);
   outputBox.setAttribute('rows', '20');
-  outputBox.setAttribute('cols', '50');
+  outputBox.setAttribute('cols', '30');
   outputBox.setAttribute('readonly', null);
   outputBox.value = convert(finalArray, typeOfOutput);
   inputArea.appendChild(outputBox);
