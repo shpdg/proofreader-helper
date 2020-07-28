@@ -7,8 +7,24 @@
   color: black;
 }
 
+label {
+  font-size: 20px;
+}
+
+button {
+  width: 120px; /* thanks: https://www.quora.com/How-do-you-edit-a-button-size-in-HTML */
+}
+
 #static-explanation-text {
   width: 90%;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+#static-explanation-text:not(h2) {
+  font-size: 20px;
 }
 
 footer {
